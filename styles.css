@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 7rem;
+  background-color: #181918;
+  padding-inline: 6rem;
+}
+
+section {
+  padding-inline: 6rem;
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .container {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #120f0f;
+  margin-bottom: 3rem;
+}
+
+header .container {
+  max-width: 1240px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+header .container .logo {
+  width: 17rem;
+}
+
+header .container .logo img {
+  width: 100%;
+}
+
+header .container button.hamb {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+header .container .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+header .container .menu ul li a {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header .container .menu ul li a:hover {
+  color: #288957;
+}
+
+section.hero {
+  position: relative;
+  padding-inline: 6rem;
+  padding-block: 3rem;
+}
+
+section.hero .hero-background {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.hero .container .hero-text h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #120f0f;
+}
+
+section.hero .container .hero-text h1 span {
+  color: #288957;
+}
+section.hero .container .hero-text h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #120f0f;
+  margin-bottom: 2rem;
+}
+
+section.hero .container .hero-img img {
+  min-width: 48rem;
+  width: 100%;
+  flex: 1;
+  object-fit: contain;
+}
+
+section.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dcffed;
+}
+
+section.sobre .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.sobre .container .sobre-img {
+  width: 60rem;
+  overflow: hidden;
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
+}
+
+section.sobre .container .sobre-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section.sobre .container p {
+  width: 72rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #120f0f;
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+section.produto .container {
+  display: flex;
+  gap: 6rem;
+}
+
+section.produto .container img {
+  max-width: 40rem;
+  min-width: 35rem;
+  width: 100%;
+  border-radius: 50px;
+  aspect-ratio: 1/1;
+}
+
+section.produto .container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section.produto .container div button {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #57aa7f;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+section.produto .container div button:hover {
+  background-color: #2e8558;
+}
+
+section.produto .container div .desc-produto h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #120f0f;
+  margin-bottom: 2rem;
+}
+
+section.produto .container div .desc-produto p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #120f0f;
+  margin-bottom: 2rem;
+}
+
+section.produto .container div .desc-produto span {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #120f0f;
+  margin-bottom: 2rem;
+}
+
+section.produto .container div .desc-produto span span {
+  color: #288957;
+}
+
+section.contato .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.contato .container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+section.contato .container div label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #120f0f;
+}
+
+section.contato .container div input {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #120f0f;
+  border-radius: 8px;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #120f0f;
+}
+
+section.contato .container div textarea {
+  width: 100%;
+  border: 1px solid #120f0f;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #120f0f;
+}
+
+section.contato .container button {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #57aa7f;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+section.contato .container button:hover {
+  background-color: #2e8558;
+}
+
+footer {
+  width: 100%;
+  background-color: #181918;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+footer div {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+footer div:last-of-type {
+  margin-bottom: 2rem;
+}
+
+footer div a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer div a:hover {
+  color: #288957;
+}
+
+footer div:last-of-type a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+footer div:last-of-type a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #8b8b8b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.carrinho-button {
+  position: relative;
+}
+.carrinho-button.com-item::before {
+  content: "1";
+  position: absolute;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  background-color: #ff7974;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -0.5rem;
+  right: -1.5rem;
+}
+
+.logout-ul {
+  position: relative;
+}
+
+.logout-ul div {
+  display: none;
+  position: absolute;
+  background-color: #2a2b2a;
+  width: 12rem;
+  height: 5rem;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 1.6rem;
+  justify-content: center;
+  color: #fff;
+  right: 0;
+  bottom: -5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-ul.active div {
+  display: flex;
+}
+
+.logout-ul div:hover {
+  color: #ff5d5d;
+}
+
+@media (max-width: 1020px) {
+  section.hero .container .hero-img {
+    display: none;
+  }
+}
+/* Mobile */
+@media (max-width: 850px) {
+  header .container .menu {
+    display: none;
+  }
+
+  header .container .menu.open {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    background-color: #181918;
+    width: 300px;
+    top: 7rem;
+    right: 6rem;
+  }
+
+  header .container .menu.open ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  header .container .menu.open ul li {
+    padding: 2rem;
+    cursor: pointer;
+  }
+  header .container .menu.open ul li:hover {
+    background-color: #ffffff20;
+  }
+
+  header .container .menu.open ul li:hover a {
+    color: #288957;
+  }
+
+  header .container button.hamb img {
+    width: 100%;
+  }
+  header .container button.hamb {
+    display: flex;
+  }
+
+  header .container button.hamb img:first-child {
+    display: block;
+  }
+
+  header .container button.hamb.open img:first-child {
+    display: none;
+  }
+
+  header .container button.hamb img:last-child {
+    display: none;
+  }
+
+  header .container button.hamb.open img:last-child {
+    display: block;
+  }
+
+  header .container .menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+  }
+
+  section.hero .container .hero-img img {
+    display: none;
+  }
+
+  section.sobre .container {
+    flex-direction: column-reverse;
+  }
+
+  section.sobre .container .sobre-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    overflow: hidden;
+    clip-path: none;
+  }
+
+  section.sobre .container p {
+    width: 100%;
+  }
+
+  section.produto .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  section.produto .container img {
+    max-width: none;
+  }
+}

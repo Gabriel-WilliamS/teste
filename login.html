@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <button class="hamb">
+          <img src="./img/hambOpen.svg" alt="" class="openImg" />
+          <img src="./img/hambClose.svg" alt="" class="closeImg" />
+        </button>
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#sobre">Sobre</a></li>
+            <li><a href="./index.html#produto">Produtos</a></li>
+            <li><a href="./index.html/">Contato</a></li>
+            <li>
+              <a href="./carrinho.html" class="carrinho-button">Carrinho</a>
+            </li>
+            <li class="login-li">
+              <a href="./login.html" class="login-button">Login</a>
+            </li>
+            <li class="logout-ul">
+              <a class="logout-button"></a>
+              <div onclick="singOut()">Sair</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="login-container">
+      <h1>Login</h1>
+      <form class="form-login">
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" placeholder="exemplo@gmail.com" id="email" />
+        </div>
+
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" placeholder="********" id="password" />
+        </div>
+        <button type="submit">Entrar</button>
+        <a href="./cadastro.html">Não tem conta? Cadastre-se</a>
+      </form>
+    </main>
+
+    <footer>
+      <img src="./img/logo.png" alt="" />
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#sobre">Sobre</a>
+        <a href="./index.html#produto">Produto</a>
+        <a href="./index.html#contato">Contato</a>
+        <a href="./carrinho.html">Carrinho</a>
+        <a href="./login.html">Login</a>
+      </div>
+      <div>
+        <a href="linkface" target="_blank">
+          <img src="./img/facebook.svg" alt="" /> Facebook</a
+        >
+        <a href="linkinsta" target="_blank">
+          <img src="./img/instagram.svg" alt="" />Instagram</a
+        >
+        <a href="linkwhats" target="_blank"
+          ><img src="./img/whatsapp.svg" alt="" /> WhatsApp</a
+        >
+      </div>
+      <p>© 2023 All Rights Reserved. By HTML Design</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

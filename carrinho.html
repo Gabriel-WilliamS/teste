@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./carrinho.css" />
+    <title>Carrinho</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <button class="hamb">
+          <img src="./img/hambOpen.svg" alt="" class="openImg" />
+          <img src="./img/hambClose.svg" alt="" class="closeImg" />
+        </button>
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#sobre">Sobre</a></li>
+            <li><a href="./index.html#produto">Produtos</a></li>
+            <li><a href="./index.html#contato">Contato</a></li>
+            <li>
+              <a href="./carrinho.html" class="carrinho-button">Carrinho</a>
+            </li>
+            <li class="login-li">
+              <a href="./login.html" class="login-button">Login</a>
+            </li>
+            <li class="logout-ul">
+              <a class="logout-button"></a>
+              <div onclick="singOut()">Sair</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="carrinho-container">
+      <h1>Meu carrinho</h1>
+
+      <div>
+        <div>
+          <h2>Produto</h2>
+
+          <div class="product-card">
+            <img src="./img/produto.jpg" alt="" />
+            <div class="product-info">
+              <div>
+                <h3 class="c-nome-produto">Nome do produto</h3>
+                <p class="c-desc-produto">Descrição do produto</p>
+                <p class="c-preco-produto">R$ 99,00</p>
+              </div>
+              <div>
+                <button onclick="removerDoCarrinho()" class="remove-button">
+                  Remover
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resumo-pedido">
+          <h2>Resumo do pedido</h2>
+          <div>
+            <ul>
+              <li>
+                <span>Total</span>
+                <p class="c-total-produto">R$ 00,00</p>
+              </li>
+            </ul>
+
+            <button onclick="finalizarCompra()">Finalizar compra</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="./img/logo.png" alt="" />
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#sobre">Sobre</a>
+        <a href="./index.html#produto">Produto</a>
+        <a href="./index.html#contato">Contato</a>
+        <a href="./carrinho.html">Carrinho</a>
+        <a href="./login.html">Login</a>
+      </div>
+      <div>
+        <a href="linkface" target="_blank">
+          <img src="./img/facebook.svg" alt="" /> Facebook</a
+        >
+        <a href="linkinsta" target="_blank">
+          <img src="./img/instagram.svg" alt="" />Instagram</a
+        >
+        <a href="linkwhats" target="_blank"
+          ><img src="./img/whatsapp.svg" alt="" /> WhatsApp</a
+        >
+      </div>
+      <p>© 2023 All Rights Reserved. By HTML Design</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

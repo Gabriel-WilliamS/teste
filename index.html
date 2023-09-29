@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Livre de dor - Flavia Pires</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <button class="hamb">
+          <img src="./img/hambOpen.svg" alt="" class="openImg" />
+          <img src="./img/hambClose.svg" alt="" class="closeImg" />
+        </button>
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#sobre">Sobre</a></li>
+            <li><a href="./index.html#produto">Produtos</a></li>
+            <li><a href="./index.html#contato">Contato</a></li>
+            <li>
+              <a href="./carrinho.html" class="carrinho-button">Carrinho </a>
+            </li>
+            <li class="login-li">
+              <a href="./login.html" class="login-button">Login</a>
+            </li>
+            <li class="logout-ul">
+              <a class="logout-button"></a>
+              <div onclick="singOut()">Sair</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <img src="./img/herobackground.png" alt="" class="hero-background" />
+
+      <div class="container">
+        <div class="hero-text">
+          <h1><span>Olá</span><br />Meu nome e Flavia Pires</h1>
+          <h2>
+            Vou auxiliar você a se livrar das dores de maneira rápida e
+            saudável, proporcionando alívio eficaz.
+          </h2>
+        </div>
+        <div class="hero-img">
+          <img src="./img/pessoaHero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre</h2>
+
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vel
+          distinctio saepe pariatur aliquid voluptatibus! Possimus officia
+          voluptas reprehenderit perferendis facere architecto sint. Nisi,
+          voluptatibus eligendi dolorum fuga hic neque.
+        </p>
+        <div class="sobre-img">
+          <img src="./img/sobreImg.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="produto" id="produto">
+      <h2>Produto</h2>
+      <div class="container">
+        <img src="./img/produto.jpg" alt="" />
+        <div>
+          <div class="desc-produto">
+            <h3>Nome do prduto</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+              tempore neque dolor nulla culpa accusantium illum possimus aut
+              molestias quo praesentium aliquid hic repudiandae ullam facere
+              error corrupti, repellat ad.
+            </p>
+            <span>Por: <span>R$96,00</span> </span>
+          </div>
+
+          <button onclick="adicionarAoCarrinho()">Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Entre em contato</h2>
+      <form class="container">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="button-contato">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <img src="./img/logo.png" alt="" />
+      <div>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#sobre">Sobre</a>
+        <a href="./index.html#produto">Produto</a>
+        <a href="./index.html#contato">Contato</a>
+        <a href="./carrinho.html">Carrinho</a>
+        <a href="./login.html">Login</a>
+      </div>
+      <div>
+        <a href="linkface" target="_blank">
+          <img src="./img/facebook.svg" alt="" /> Facebook</a
+        >
+        <a href="linkinsta" target="_blank">
+          <img src="./img/instagram.svg" alt="" />Instagram</a
+        >
+        <a href="linkwhats" target="_blank"
+          ><img src="./img/whatsapp.svg" alt="" /> WhatsApp</a
+        >
+      </div>
+      <p>© 2023 All Rights Reserved. By HTML Design</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
